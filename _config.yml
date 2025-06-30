@@ -1,0 +1,153 @@
+# ========================================
+# CONFIGURACION BASICA DEL SITIO
+# ========================================
+title: "Mi Blog"
+description: "Un blog sobre desarrollo web software y tecnologia"
+url: "https://serloro.github.io"
+baseurl: "/blog_demo"
+
+# ========================================
+# INFORMACION DEL AUTOR
+# ========================================
+author:
+  name: "serloro"
+  email: "tu@email.com"
+  github: "https://github.com/serloro"
+  twitter: "@serloro"
+
+# ========================================
+# CONFIGURACION DE JEKYLL
+# ========================================
+theme: minima
+permalink: /:categories/:year/:month/:day/:title/
+
+# ========================================
+# CONFIGURACION CRITICA PARA MOSTRAR POSTS
+# ========================================
+# IMPORTANTE: Esta configuracion es ESENCIAL para que los posts aparezcan
+show_excerpts: true
+paginate: 10
+paginate_path: "/page:num/"
+
+# ========================================
+# PLUGINS ESENCIALES PARA POSTS
+# ========================================
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# ========================================
+# CONFIGURACION DE MARKDOWN
+# ========================================
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# ========================================
+# CONFIGURACION DE COLECCIONES Y POSTS
+# ========================================
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# ========================================
+# DEFAULTS PARA POSTS (CRITICO)
+# ========================================
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "serloro"
+      comments: true
+      published: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# ========================================
+# CONFIGURACION ESPECIFICA DE MINIMA
+# ========================================
+minima:
+  # CRITICO: Configuracion para mostrar posts en home
+  show_excerpts: true
+  
+  # Enlaces sociales
+  social_links:
+    github: serloro
+    twitter: serloro
+  
+  # Configuracion de header
+  header_pages:
+    - about.md
+
+# ========================================
+# CONFIGURACION DE FECHA Y IDIOMA
+# ========================================
+date_format: "%B %d, %Y"
+timezone: Europe/Madrid
+lang: es-ES
+
+# ========================================
+# ARCHIVOS A EXCLUIR
+# ========================================
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# ========================================
+# CONFIGURACION DE FEEDS Y SEO
+# ========================================
+feed:
+  path: feed.xml
+
+# SEO y metadatos
+seo:
+  type: Blog
+  twitter:
+    username: "@serloro"
+    card: "summary_large_image"
+
+# ========================================
+# ENLACES SOCIALES
+# ========================================
+social_links:
+  - name: GitHub
+    url: https://github.com/serloro
+  - name: Twitter
+    url: https://twitter.com/serloro
+
+# ========================================
+# CONFIGURACION ADICIONAL PARA POSTS
+# ========================================
+# Habilitar resaltado de sintaxis
+highlighter: rouge
+
+# Configuracion de posts
+future: true
+unpublished: false
+
+# IMPORTANTE: Asegurar que los posts se procesen correctamente
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+
+# Configuracion de build
+safe: true
+incremental: false
+profile: false
