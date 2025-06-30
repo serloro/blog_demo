@@ -1,0 +1,247 @@
+/* ===========================================
+   ESTILO POR DEFECTO - Tema Oscuro Moderno
+   =========================================== */
+
+body {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: 'Source Code Pro', 'Fira Code', 'Monaco', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem 2rem;
+  min-height: 100vh;
+}
+
+/* Enlaces con acento cyan */
+a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #80fff4;
+  text-shadow: 0 0 8px #64ffda;
+}
+
+/* Cabeceras centradas */
+header, header h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #64ffda;
+  text-shadow: 0 0 10px #64ffda;
+}
+
+/* Listado de posts con estilo */
+ul.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+ul.post-list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-left: 4px solid #64ffda;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+ul.post-list li:hover {
+  background-color: #2a2a2a;
+  border-left-color: #80fff4;
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(100, 255, 218, 0.2);
+}
+
+ul.post-list li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Listas normales */
+ul:not(.post-list) {
+  padding-left: 2rem;
+}
+
+ol {
+  padding-left: 2rem;
+}
+
+/* Contenido de posts */
+article {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+}
+
+article h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #64ffda;
+  text-align: center;
+}
+
+article p, article li {
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.7;
+}
+
+/* Codigo con estilo hacker */
+code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #64ffda;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+}
+
+pre {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+/* Citas destacadas */
+blockquote {
+  border-left: 4px solid #64ffda;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: #b0b0b0;
+  background-color: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Imagenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Separadores */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #64ffda, transparent);
+  margin: 3rem 0;
+}
+
+/* Boton "Leer mas" */
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #64ffda;
+  color: #000000;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(100, 255, 218, 0.3);
+}
+
+.read-more:hover {
+  background-color: #52c7a6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(100, 255, 218, 0.4);
+}
+
+/* Pie de pagina */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #666666;
+  border-top: 1px solid #333333;
+  margin-top: 3rem;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: #64ffda;
+  color: #000000;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Efectos de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  
+  article {
+    margin: 1rem auto;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  ul.post-list li {
+    padding: 0.8rem;
+  }
+}
